@@ -114,6 +114,17 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        Button buttonClr = (Button) findViewById(R.id.buttonClr);
+        buttonClr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                newNumber.setText("");
+                displayOperation.setText("");
+                result.setText("");
+                operand1 *= 0;
+            }
+        });
     }
 
     @Override
